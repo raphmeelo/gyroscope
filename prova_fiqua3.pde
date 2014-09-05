@@ -10,7 +10,7 @@ ParticleSystem ps;
 
 void setup() {
   size(640,360,P3D);
-  //blendMode(ADD);
+  blendMode(ADD);
   frameRate(120);
   ps = new ParticleSystem(new PVector());
 }
@@ -20,6 +20,7 @@ void draw() {
   
   translate(width/2, height/2);
   //rotazione non def
+  //rotateZ(PI/3);
   rotateX(PI/3);
   float x = r*cos(a);
   float y = r*sin(a);
@@ -34,3 +35,6 @@ void draw() {
   
   aVel = constrain(aVel,0,0.02);
 }
+
+
+

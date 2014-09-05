@@ -56,6 +56,10 @@ class Particle {
     imageMode(CENTER);
     tint(255,lifespan);
     image(img,location.x, location.y);
+    
+    //translate(location.x, location.y);
+    //sphere(12);
+    
     //stroke(0, lifespan);
     //strokeWeight(2);
     //fill(127, lifespan);
